@@ -34,7 +34,6 @@ export default function Home() {
   function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
     setSubmitted(true);
-    alert("Haha you got hacked!");
   }
 
   return (
