@@ -10,7 +10,7 @@ export default function Home() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  function handleChange(e: { target: { name: any; value: string } }) {
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     setAnswers({ ...answers, [e.target.name]: e.target.value === "true" });
   }
 
